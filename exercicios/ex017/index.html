@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: 'work Sans', Arial, Helvetica, sans-serif;
+
+            /*
+            Medidas absolutas
+            c, mm, in, px, pt, pc
+            
+            Medidas relativas
+            em, ex, rem, vw, vh, %
+
+            16px geralmente = 1em
+            RECOMENDADO USAR SOMENTE px e em, prioridade para em.
+            */
+            font-size: 1em;
+        }
+        h1 {
+            /* shorthand font
+            DEVE SER SEMPRE NA ORDEM ABAIXO
+            font-style -> font-weight -> font-size -> font-family 
+
+            font-family: 'work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'work Sans', sans-serif;
+        }
+        h2 {
+            font: bolder 2em 'work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, error impedit vero, ratione accusantium ea inventore nostrum, architecto saepe ipsa commodi officiis? Ea enim molestias unde alias hic nihil provident. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione iure nam unde dolorum incidunt atque qui nisi impedit praesentium nulla asperiores voluptates soluta alias enim odit, quas sapiente aliquam fugit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi praesentium suscipit consectetur repellat saepe. Vel rerum sint omnis mollitia libero minima quasi natus deleniti vitae eveniet. Possimus aut maxime quasi.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quidem ipsam odit ex aliquam, aperiam eaque libero rerum quisquam ad voluptatibus dolores veritatis, quia vitae sint saepe labore veniam a.</p>
+</body>
+</html>
